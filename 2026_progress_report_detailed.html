@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 Progress — Engineering Growth</title>
+<style>
+*{box-sizing:border-box} :root{--bg:#07090d;--panel:#0d1118;--panel2:#111722;--text:#f4f7fb;--muted:#98a3b4;--line:#202734;--a:#8b5cf6;--b:#22d3ee}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+body:before{content:"";position:fixed;inset:-30%;pointer-events:none;background:radial-gradient(circle at 78% 18%,rgba(139,92,246,.15),transparent 24%),radial-gradient(circle at 12% 82%,rgba(34,211,238,.08),transparent 25%);filter:blur(35px)}
+.deck{height:100%}.slide{position:absolute;inset:0;padding:6vh 7vw 8vh;display:grid;align-content:center;opacity:0;transform:translateY(24px);pointer-events:none;transition:.6s cubic-bezier(.2,.8,.2,1)}.slide.active{opacity:1;transform:none;pointer-events:auto}
+.ey{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--b);font-weight:800;margin-bottom:17px}h1{font-size:clamp(55px,7.5vw,112px);line-height:.9;letter-spacing:-.065em;margin:0;max-width:1100px}h2{font-size:clamp(38px,4.8vw,70px);line-height:.96;letter-spacing:-.05em;margin:0 0 26px}.grad{background:linear-gradient(110deg,#fff,#c4b5fd 55%,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(18px,1.8vw,26px);line-height:1.45;color:var(--muted);max-width:900px;margin:26px 0 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1120px}.card{background:rgba(13,17,24,.8);border:1px solid var(--line);border-radius:20px;padding:22px}.card h3{margin:0 0 10px;font-size:19px}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:15px}.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:#aeb8c7;font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:13px}
+.compare{display:grid;grid-template-columns:1fr 70px 1fr;gap:15px;max-width:1150px}.side{background:rgba(13,17,24,.78);border:1px solid var(--line);border-radius:22px;padding:26px}.side .year{font-size:11px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.side h3{font-size:31px;margin:10px 0 18px}.side ul{list-style:none;margin:0;padding:0}.side li{padding:10px 0;border-bottom:1px solid var(--line);color:#b9c2cf;line-height:1.4}.arrow{display:grid;place-items:center;font-size:34px;color:var(--b)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);max-width:1150px}.flow .item{padding:18px 18px 18px 0;border-top:1px solid var(--line);position:relative}.flow .item:before{content:"";position:absolute;top:-4px;left:0;width:8px;height:8px;border-radius:50%;background:var(--a)}.flow strong{display:block;margin:0 0 8px}.flow span{font-size:13px;color:var(--muted);line-height:1.5}
+.timeline{display:grid;gap:10px;max-width:1050px}.tl{display:grid;grid-template-columns:100px 1fr;gap:18px;align-items:start}.tl .yr{color:var(--b);font-weight:800;font-size:13px;padding-top:4px}.tl .box{background:rgba(13,17,24,.75);border:1px solid var(--line);border-radius:15px;padding:15px 18px;color:#c5ccd7;line-height:1.5}.tl .box b{color:#fff}
+.quote{font-size:clamp(33px,4.6vw,67px);line-height:1.05;letter-spacing:-.045em;max-width:1050px}.quote small{display:block;color:var(--muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-top:28px}
+.footer{position:fixed;left:7vw;right:7vw;bottom:25px;display:flex;justify-content:space-between;align-items:center;color:#5d687a;font-size:10px;letter-spacing:.08em;z-index:20}.bar{width:180px;height:2px;background:var(--line)}.bar i{display:block;height:100%;background:#fff;width:0;transition:.5s}.hint{position:fixed;right:7vw;top:25px;color:#566173;font-size:10px;letter-spacing:.1em;z-index:20}
+@media(max-width:800px){.slide{padding:70px 7vw}.grid,.compare,.flow{grid-template-columns:1fr}.arrow{display:none}.tl{grid-template-columns:65px 1fr}.hint{display:none}.footer{bottom:14px}}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<section class="slide active">
+<div><div class="ey">2025 → 2026 / Engineering Growth</div><h1>From writing code<br>to <span class="grad">understanding systems.</span></h1><p class="lead">A practical look at how my Odoo frontend, OWL, backend, debugging, architecture, and ownership evolved.</p></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">01 / The biggest change</div><h2>The questions became<br><span class="grad">better.</span></h2>
+<div class="compare">
+<div class="side"><div class="year">2025</div><h3>“How do I fix this?”</h3><ul><li>Start from the error or snippet</li><li>Focus on making the feature work</li><li>Debug the visible symptom</li><li>Ask for the implementation pattern</li></ul></div>
+<div class="arrow">→</div>
+<div class="side"><div class="year">2026</div><h3>“Why does this happen?”</h3><ul><li>Identify the system boundary</li><li>Understand lifecycle and dependencies</li><li>Look for the root cause</li><li>Choose an architecture, not only a patch</li></ul></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">02 / Odoo Website Frontend</div><h2>From QWeb implementation<br>to <span class="grad">website engineering.</span></h2>
+<div class="grid">
+<div class="card"><span class="tag">2025</span><h3>QWeb & DOM</h3><p>Worked heavily with QWeb conditions, template context, product cards, images, URLs, pricing, SVGs, publicWidget events and DOM interactions. The focus was getting the UI behavior correct.</p></div>
+<div class="card"><span class="tag">2026</span><h3>Website architecture</h3><p>Started reasoning about snippet lifecycle, editor mode, asset loading, dynamic snippets, nested components, initialization timing and interactions between custom code and Odoo’s website editor.</p></div>
+<div class="card"><span class="tag">Example</span><h3>Dynamic snippets</h3><p>Instead of treating an editor problem as a simple JS bug, the investigation reached double initialization, DOM mutation in edit mode, nested website-form behavior and snippet separation.</p></div>
+<div class="card"><span class="tag">Impact</span><h3>Better decisions</h3><p>This makes frontend work safer: fewer fixes that solve one page while breaking the editor, other snippets, or future changes.</p></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">03 / OWL</div><h2>From using OWL<br>to <span class="grad">thinking in OWL.</span></h2>
+<div class="compare">
+<div class="side"><div class="year">Earlier stage</div><h3>Component implementation</h3><ul><li>Reactive state</li><li>ORM calls</li><li>QWeb/OWL templates</li><li>Events & UI rendering</li></ul></div>
+<div class="arrow">→</div>
+<div class="side"><div class="year">Current stage</div><h3>Component lifecycle</h3><ul><li>State and data flow</li><li>Services and async behavior</li><li>View/registry integration</li><li>Initialization & cleanup</li><li>Interaction with Odoo editor/runtime</li></ul></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">04 / OWL — evidence of growth</div><h2>The work became<br><span class="grad">more system-level.</span></h2>
+<div class="timeline">
+<div class="tl"><div class="yr">2025</div><div class="box">Built an OWL dashboard with reactive <b>state.projects</b>, ORM calls, project expansion, phase rendering and native Odoo-style nested UI.</div></div>
+<div class="tl"><div class="yr">2025</div><div class="box">Extended form behavior by overriding <b>Record._save()</b>, using registries/services and connecting frontend notifications to backend validation.</div></div>
+<div class="tl"><div class="yr">2026</div><div class="box">Worked with more complex website/editor interactions, dynamic snippets, carousels, loading states and frontend initialization problems in Odoo 19.</div></div>
+<div class="tl"><div class="yr">2026</div><div class="box">Started treating frontend behavior as part of a larger lifecycle: <b>assets → initialization → state → DOM → editor/runtime → cleanup</b>.</div></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">05 / Backend Growth</div><h2>Frontend became stronger<br>because <span class="grad">backend became stronger.</span></h2>
+<div class="grid">
+<div class="card"><h3>Controllers</h3><p>Moved from simply consuming backend data to designing controller behavior, request types, pagination, sorting, filters, exports and response formats.</p></div>
+<div class="card"><h3>ORM & models</h3><p>More comfortable reasoning about domains, records, permissions, computed/derived data, business rules and where validation belongs.</p></div>
+<div class="card"><h3>HTTP vs JSON-RPC</h3><p>Worked through the distinction between binary downloads and JSON-RPC flows, including Odoo 19 request behavior and request-body handling.</p></div>
+<div class="card"><h3>Data flow</h3><p>Dashboards now involve a full chain: database → ORM → controller → QWeb/JS → charts/UI → export, rather than treating frontend and backend as separate pieces.</p></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">06 / Backend — what changed in practice</div><h2>Not just Python.<br><span class="grad">System thinking.</span></h2>
+<div class="flow">
+<div class="item"><strong>Database</strong><span>Understand what data is needed and where it comes from.</span></div>
+<div class="item"><strong>ORM</strong><span>Build the correct domain, records and business logic.</span></div>
+<div class="item"><strong>Controller</strong><span>Choose the right route, request type and response.</span></div>
+<div class="item"><strong>Frontend</strong><span>Consume and transform data for the actual UI.</span></div>
+<div class="item"><strong>Output</strong><span>Charts, pagination, exports and user actions become one flow.</span></div>
+</div>
+<p class="lead" style="font-size:17px;margin-top:32px">Example: the company dashboard and Excel export work required thinking across the entire chain, including Odoo 19-specific request behavior.</p>
+</div>
+</section>
+
+<section class="slide">
+<div><div class="ey">07 / Debugging</div><h2>The evolution of debugging</h2>
+<div class="compare">
+<div class="side"><div class="year">Before</div><h3>Symptom-driven</h3><ul><li>“This error appears.”</li><li>Inspect the line</li><li>Try a correction</li><li>Test again</li></ul></div>
+<div class="arrow">→</div>
+<div class="side"><div class="year">Now</div><h3>Root-cause driven</h3><ul><li>What lifecycle is running?</li><li>Which layer owns the behavior?</li><li>What changed between Odoo versions?</li><li>Is another component initializing the same thing?</li><li>Can the fix create a second problem?</li></ul></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">08 / Architecture & Quality</div><h2>Fixing the problem<br>is no longer the finish line.</h2>
+<div class="grid">
+<div class="card"><h3>Separation of concerns</h3><p>More attention to whether logic belongs in QWeb, JavaScript/OWL, a controller, a model, or an external service.</p></div>
+<div class="card"><h3>Version awareness</h3><p>Odoo 19 behavior is not assumed to be identical to earlier versions. The request lifecycle, editor behavior and asset system can affect the correct solution.</p></div>
+<div class="card"><h3>Reusable solutions</h3><p>More interest in patterns that can be reused across modules instead of one-off fixes.</p></div>
+<div class="card"><h3>Risk awareness</h3><p>Consider side effects: editor mode, double initialization, DOM mutation, dependencies, performance and future maintenance.</p></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">09 / A new level of thinking</div><div class="quote">“I used to ask for the fix.<br>Now I increasingly ask about the <span class="grad">reason behind the fix.</span>”<small>That change improves every layer of the work.</small></div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">10 / How this improves the work</div><h2>Technical growth →<br><span class="grad">better delivery.</span></h2>
+<div class="grid">
+<div class="card"><h3>Faster diagnosis</h3><p>Understanding the framework reduces random trial-and-error and narrows the search space.</p></div>
+<div class="card"><h3>Safer changes</h3><p>Thinking about lifecycle and dependencies reduces fixes that break another part of the system.</p></div>
+<div class="card"><h3>Better communication</h3><p>Technical discussions become easier because the problem can be explained in terms of cause, impact and trade-offs.</p></div>
+<div class="card"><h3>More ownership</h3><p>Frontend and backend knowledge make it possible to follow a feature from requirement to data, implementation and final user experience.</p></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">11 / Next stage</div><h2>What should improve<br><span class="grad">next?</span></h2>
+<div class="grid">
+<div class="card"><h3>Testing</h3><p>Turn repeated debugging knowledge into automated checks and safer changes.</p></div>
+<div class="card"><h3>Performance</h3><p>Go deeper into assets, rendering, database queries, client-side work and loading behavior.</p></div>
+<div class="card"><h3>Architecture</h3><p>Build clearer reusable patterns for Odoo website, OWL and backend modules.</p></div>
+<div class="card"><h3>Tooling</h3><p>Continue turning recurring debugging tasks into reusable developer tooling and inspection workflows.</p></div>
+</div></div>
+</section>
+
+<section class="slide">
+<div><div class="ey">12 / Closing</div><h1><span class="grad">More depth.</span><br>More ownership.<br>Better engineering.</h1><p class="lead">The biggest progress is not the number of things delivered. It is the ability to understand the system behind them and make better technical decisions.</p></div>
+</section>
+
+</div>
+<div class="hint">ARROWS / SPACE · HOME / END</div>
+<div class="footer"><span>2026 PROGRESS REPORT</span><span style="display:flex;gap:14px;align-items:center"><b id="n">01 / 12</b><i class="bar"><i id="p"></i></i></span></div>
+<script>
+const S=[...document.querySelectorAll('.slide')];let i=0;
+function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((x,k)=>x.classList.toggle('active',k===i));document.getElementById('n').textContent=String(i+1).padStart(2,'0')+' / '+String(S.length).padStart(2,'0');document.getElementById('p').style.width=((i+1)/S.length*100)+'%'}
+addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0);if(e.key==='End')go(S.length-1)});
+let x=0;addEventListener('touchstart',e=>x=e.changedTouches[0].screenX,{passive:true});addEventListener('touchend',e=>{let d=e.changedTouches[0].screenX-x;if(Math.abs(d)>50)go(i+(d<0?1:-1))},{passive:true});go(0);
+</script>
+</body></html>
